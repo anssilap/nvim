@@ -24,6 +24,7 @@ vim.opt.undofile = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
+vim.opt.colorcolumn = "120"
 
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 2
@@ -35,5 +36,5 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 vim.opt.clipboard = "unnamedplus"
 
-vim.o.guifont = "JetBrains Mono"
+vim.o.guifont = "JetBrains Mono NL"
 
