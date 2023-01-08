@@ -1,6 +1,6 @@
 --print("Config: /settings/keybinds.lua")
 
-vim.keymap.set("n", "<leader>f", vim.cmd.Rex)
+vim.keymap.set("n", "<leader>F", vim.cmd.Rex)
 vim.keymap.set("n", "<leader>b", "<cmd>:bnext<cr>")
 
 -- Fuzzy find ALL THE THINGS!
