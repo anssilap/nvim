@@ -6,16 +6,6 @@ lsp.ensure_installed {
     'lua_ls',
 }
 
-require('lspconfig').sumneko_lua.setup {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-}
-
 lsp.on_attach(function(_, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
