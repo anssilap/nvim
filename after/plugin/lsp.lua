@@ -3,8 +3,7 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed {
-    'tsserver',
-    'lua_ls'
+    'lua_ls',
 }
 
 require('lspconfig').sumneko_lua.setup {
