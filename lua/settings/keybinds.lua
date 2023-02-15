@@ -34,3 +34,6 @@ vim.keymap.set("n", "<leader>f", function ()
     vim.lsp.buf.format()
 end)
 
+-- Remap esc to get out of terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-N>")
+
