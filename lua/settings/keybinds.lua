@@ -5,7 +5,7 @@ vim.keymap.set("n", "<leader>b", "<cmd>:bnext<cr>")
 
 -- Fuzzy find ALL THE THINGS!
 vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
-vim.keymap.set("n", "<C-f>", "<cmd>Telescope live_grep<cr>")
+vim.keymap.set("n", "<C-F>", "<cmd>Telescope live_grep<cr>")
 
 -- Comment/uncomment current or selected lines
 vim.keymap.set("n", "<leader>k", ":CommentToggle<cr>")
@@ -13,7 +13,6 @@ vim.keymap.set("v", "<leader>k", ":'<,'>CommentToggle<cr>")
 
 vim.keymap.set("n", "<C-v>", '"+P')
 vim.keymap.set("n", "J", "mzJ`z")
-
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -30,7 +29,7 @@ vim.keymap.set("n", "c", '"_c')
 vim.keymap.set("v", "c", '"_c')
 
 -- Format code in current buffer
-vim.keymap.set("n", "<leader>f", function ()
+vim.keymap.set("n", "<C-k><C-c>", function ()
     vim.lsp.buf.format()
 end)
 
